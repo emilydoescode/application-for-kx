@@ -12,7 +12,9 @@ on_actions = { # Abandon all hope, ye who enters here
 	# Anytime y'all are triggering the popup manually, please add 1 to the dirty variable, `global.peace_popup_dirty`
 
 	#See TNO_economy_scripted_effects regarding how transfer_GDP works
-    on_capitulation = { #This code is finnicky and weird af, just don't touch anything and it'll hypothetically work just fine
+       
+
+on_capitulation = { #This code is finnicky and weird af, just don't touch anything and it'll hypothetically work just fine
         effect = {
             
             if = { ### Russian Unification ###
@@ -285,9 +287,9 @@ on_actions = { # Abandon all hope, ye who enters here
                 else_if = {
                     limit = {
                         ROOT = {
-                            tag = OMS
+                            tag = NOV
                             has_country_leader = {
-                                character = OMS_Dmitry_Yazov
+                                character = NOV_
                                 ruling_only = yes
                             }
                         }
@@ -570,5 +572,63 @@ on_actions = { # Abandon all hope, ye who enters here
             }
          }
     }
+
+    #OMSK STUFF
+
+    on_capitulation = {
+        effect = {
+            
+            if = { ### Russian Unification ###
+                limit = {
+                    FROM = {
+                         OMS = {
+                            has_country_leader = {
+                            character = OMS_Dmitry_Yazov
+                            ruling_only = yes
+                            }
+                        }
+                    }
+                    
+                }
+                if = {
+                    limit = {
+                        ROOT = {
+                        tag = PRM
+                        has_country_leader = {
+                            character = PRM_Gutrum_Vagner
+                            ruling_only = yes
+                          }
+                        }
+                    }
+                    OMS = { country_event = { id = OMS_unification_war.1 days = 1 }}
+                    OMS = { country_event = { id = OMS_unification_war.2 days = 3 }}
+                
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = WRS
+                            has_country_leader = {
+                                character = WRS_Georgy_Zhukov
+                                ruling_only = yes
+                            }
+                        }
+                    }  
+                    OMS = { country_event = { id = OMS_unification_war.3 days = 1}}
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = WRS
+                            has_country_leader = {
+                                character = WRS_Mikhail_Tukhachevsky
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    OMS = { country_event = { id = OMS_unification_war.4 days = 1 } }
+                }
+            }
+        }
+    }
 }
-        
