@@ -1,0 +1,12 @@
+focus_tree = {
+    id = BRA_focus_tree_test
+    country = {
+        base = 0
+        modifier = {
+            add = 10
+            tag = BRA
+        }
+       
+    }
+    shared_focus = BRA_focus_one
+}
