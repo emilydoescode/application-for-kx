@@ -1,0 +1,13 @@
+spriteTypes = {
+	progressbartype = {
+		name = GFX_USA_bars
+		textureFile1 = "gfx/interface/us/bar_full.dds"
+		textureFile2 = "gfx/interface/us/bar_empty.dds"
+		size = { 
+			x = 18
+			y = 125
+		}
+		effectFile = "gfx/FX/progress.lua"
+	}
+	
+}

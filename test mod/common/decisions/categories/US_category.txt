@@ -1,0 +1,35 @@
+remove_flag_test = {
+	icon = GFX_decision_category_border_conflicts'
+	priority = {
+		base = 10
+	}
+	visible = {
+		tag = USA
+		always = yes
+	}
+}
+
+gui_test = {
+	icon = GFX_decision_category_border_conflicts
+	scripted_gui = USA_Powerbar'
+	priority = {
+		base = 10
+	}
+	visible = {
+		tag = USA
+		has_country_flag = USA_Nixon_Time
+	}
+}
+
+scripted_loc_test = {
+	icon = GFX_decision_category_border_conflicts
+	
+	priority = {
+		base = 10
+	}
+	visible = {
+		tag = USA
+		always = yes
+	}
+}
+

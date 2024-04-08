@@ -1,0 +1,12 @@
+defined_text = {
+    name = test_loc
+    text = {
+        trigger = {
+            check_variable = { var_skibidi > 10 }
+        }
+        localization_key = skibidi2_loc_key
+    }
+    text = {
+        localization_key = skibidi1_loc_key
+    }
+}

@@ -1,0 +1,95 @@
+gui_test = {
+	usa_decrease_thing_by_a_bit = {
+		icon = generic_prepare_civil_war
+			
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = USA_power
+				value = -10
+			}
+		}
+	}
+
+	usa_increase_thing_by_a_bit = {
+		icon = generic_prepare_civil_war
+		
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = USA_power
+				value = 10
+			}
+		}
+	}
+}
+
+scripted_loc_test = {
+
+
+	usa_skibidi_plus_10 = {
+		icon = generic_prepare_civil_war
+			
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = var_skibidi
+				value = 10
+			}
+		}
+	}
+
+	usa_skibidi_lose_10 = {
+		icon = generic_prepare_civil_war
+			
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			add_to_variable = {
+				var = var_skibidi
+				value = -10
+			}
+		}
+	}
+}
+
+remove_flag_test = {
+
+
+	usa_add_flag  = {
+		icon = generic_prepare_civil_war
+			
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			custom_effect_tooltip = "This is very cool!"
+			add_country_flag = USA_Nixon_Time
+		}
+	}
+
+	usa_clr_flag = {
+		icon = generic_prepare_civil_war
+			
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = { 
+			custom_effect_tooltip = "This is very uncool!"
+			clr_country_flag = USA_Nixon_Time
+		}
+	}
+}

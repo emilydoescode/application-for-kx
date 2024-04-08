@@ -17,7 +17,6 @@ shared_focus = {
     prerequisite = { focus = BRA_focus_one }
     icon = GFX_LATIN_focus_icon
 
-    search_filters = { FOCUS_FILTER_POLITICAL }
 
     completion_reward = {
         country_event = brazil_event.1
@@ -32,8 +31,6 @@ shared_focus = {
     prerequisite = { focus = BRA_focus_two }
     icon = GFX_LATIN_focus_icon
 
-    search_filters = { FOCUS_FILTER_POLITICAL }
-
     completion_reward = {
         add_idea = bra_test_idea
     }
@@ -46,8 +43,6 @@ shared_focus = {
     relative_position_id = BRA_focus_one
     prerequisite = { focus = BRA_focus_three }
     icon = GFX_LATIN_focus_icon
-
-    search_filters = { FOCUS_FILTER_POLITICAL }
 
     completion_reward = {
         set_country_flag = brazil_flag

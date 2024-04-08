@@ -1,0 +1,13 @@
+add_namespace = BRA_events
+
+country_event = {
+	id = BRA_events.1
+	title = BRA_events.1.t
+	desc = BRA_events.1.desc
+	
+	is_triggered_only = yes
+
+	option = {
+		name = BRA_events.1.a
+	}
+}

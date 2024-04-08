@@ -1,0 +1,11 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			BRA = {
+				country_event = BRA_events.1
+				set_variable = { var_skibidi = 1 }
+				
+			}
+		}
+	}
+}

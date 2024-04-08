@@ -1,0 +1,9 @@
+guiTypes = {
+	iconType = {
+		name = "power_bar"
+		spriteType = "GFX_USA_bars"
+		position = { x = 16 y = 32 }
+		
+	}
+
+}
